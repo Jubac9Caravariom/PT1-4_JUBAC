@@ -1,0 +1,102 @@
+<html>
+<head>
+<style>
+html {
+			   font-family: Bookman Old Style;
+			   text-shadow: 1px 1px #8d00ff
+			   background-image: url("HI.jpg");
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container div:hover {
+   background-color: red; 
+}
+ 
+.flex-item {
+  text-align: center;
+  border: 2px solid rgba(1, 1, 1, 1);
+  background-color: #8d00ff;	
+  width: auto ;
+  margin: 25px;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  opacity: 8;
+}
+.container {
+  padding: 10px;
+  display: grid;
+  width: 2050px;
+  height:620px;
+  grid-template-columns: 1fr 1fr 174px;
+  grid-template-rows: 50px 585px; 
+  grid-template-areas:
+      "Header Header"
+      "introduction introduction ";
+     
+}
+.header {
+  border: 2px solid rgba(1, 1, 1, 1);
+  padding: 20px;
+  text-align: center;
+  grid-area: Header;
+  background-color: #8600ff;
+  font-size: 20px;
+}
+
+.introduction {
+  opacity: 5;
+  border: 2px solid rgba(1, 1, 1, 1);
+  grid-area: introduction;	
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 1165px ;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 585px 500px ; 	
+  grid-template-areas:
+      "Header"
+      "introduction"
+	  "flex container"
+	  }
+
+
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header">A Website about Me</div>
+	<div class="introduction">
+	<ul>
+	    <li>Name: Chrysler Luke Y. Jubac</li>
+		<li>Nickname: Chrys</li>
+		<li>Age:16</li>
+		<li>Date of Birth: Febuary 20, 2006.</li>
+		<li>Hobbies: My Hobbies are playing Video Games, Listening to music.</li>
+		<li>Hobbies: Playing sports like Basketball, Football, and doing fitness.</li>
+		<li>Ambition: to be the Greatest Artist ever.</li>
+	</ul>
+	</div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Main Page</a></div>
+   <div class="flex-item"> <a href="games.html">My Favorite Games</a></div>  
+   <div class="flex-item"> <a href="rappers.html">My Favorite Rappers</a></div> 
+   <div class="flex-item"><a href="anime.html">My Favorite Anime</a></div>
+   <div class="flex-item"><a href="albums.html">My Favorite Albums</a></div>
+      <div class="flex-item"><a href="movies.html">My Favorite Movies</a></div>
+</div>
+</body>
+</html>
